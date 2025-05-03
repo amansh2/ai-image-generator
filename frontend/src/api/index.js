@@ -2,7 +2,7 @@ import axios from "axios";
 
 // http://localhost:8080/api/
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/",
+  baseURL: "https://imagegenx.onrender.com/",
 });
 
 export const GetPosts = async () => await API.get("/post/getPosts");
