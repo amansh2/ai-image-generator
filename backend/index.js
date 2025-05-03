@@ -16,6 +16,10 @@ mongoose.connect(process.env.MONGO_URI, {
     console.log('Error in DB connection: ' + error)
 });
 
+app.get('/', (req, res) => {
+    res.send('Backend is running');
+});
+
 
 // Middleware Connections
 app.use(cors());
